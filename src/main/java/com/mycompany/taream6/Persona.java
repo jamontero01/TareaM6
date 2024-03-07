@@ -1,13 +1,51 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.taream6;
 
-/**
- *
- * @author hp
- */
 public class Persona {
+    
+    private String nombre;
+    private String NumId;
+    private String edad;
+    private String ocupacion;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNumId() {
+        return NumId;
+    }
+
+    public void setNumId(String NumId) {
+        this.NumId = NumId;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+    public String getOcupacion() { 
+        return ocupacion;
+    }
+
+    public void setOcupacion(String ocupacion) {
+        this.ocupacion = ocupacion;
+    }
+    
+    public void mostrarInformacion(){
+        System.out.println("La ocupacion de la persona es: "+ ocupacion);
+        System.out.println("EL nombre es: " + nombre);
+        System.out.println("Numero de Id: "+ NumId);
+        System.out.println("La edad es: " + edad + " años");
+    }
+  
     
 }
